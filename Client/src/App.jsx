@@ -1,8 +1,30 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './App.css'
+import Root from './Root'
+import NotFound from './Components/NotFound'
+import Home from './Pages/Home'
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <Root/>,
+    errorElement: <NotFound/>,
+    children:[
+      {
+        path:'/',
+        element:<Home/>,
+      },
+    ]
+
+  }
+])
+
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline m-auto bg-slate-500 flex justify-center">
-      Hello world!
-    </h1>
+    <>
+      <RouterProvider router={router}/>
+    </>
   )
 }
 
