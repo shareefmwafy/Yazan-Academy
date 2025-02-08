@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    @apply bg-white text-black dark:bg-gray-900 dark:text-white;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #ffffff;
+    --primary-color: #1f2937;
+    --secondary-color: #374151;
+}
+
+.dark {
+    --bg-color: #1f2937;
+    --text-color: #ffffff;
+    --primary-color: #111827;
+    --secondary-color: #374151;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
