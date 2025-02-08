@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex justify-center gap-6 mt-6">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=100013864504998"
             className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
             target="_blank"
             rel="noopener noreferrer"
@@ -86,7 +86,7 @@ const Footer = () => {
             <i className="fab fa-twitter text-xl"></i>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/sasayazan/"
             className="text-gray-400 hover:text-pink-500 transition-colors duration-300"
             target="_blank"
             rel="noopener noreferrer"
