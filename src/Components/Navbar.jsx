@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useTheme } from "../context/ThemeProvider";
-import { useLanguage } from "../context/LanguageProvider"; 
+import { useTheme } from "../cont/ThemeProvider";
+import { useLanguage } from "../cont/LanguageProvider"; 
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react"; 
 
