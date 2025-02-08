@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css';
 import "./i18n";
-import { ThemeProvider } from './context/ThemeProvider.js';
-import { LanguageProvider } from "./context/LanguageProvider.jsx";
+import { ThemeProvider } from './cont/ThemeProvider.jsx';
+import { LanguageProvider } from "./cont/LanguageProvider.js";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <ThemeProvider>
