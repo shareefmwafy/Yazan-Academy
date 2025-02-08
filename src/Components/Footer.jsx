@@ -1,6 +1,6 @@
 import React from 'react';
-import { useLanguage } from '../Context/LanguageProvider';
-import { useTheme } from '../Context/ThemeProvider'; 
+import { useLanguage } from '../context/LanguageProvider';
+import { useTheme } from '../context/ThemeProvider'; 
 
 const Footer = () => {
   const { language } = useLanguage();
