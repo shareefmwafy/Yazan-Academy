@@ -54,12 +54,10 @@ function Navbar() {
           </ul>
 
           <div className="flex items-center space-x-4">
-            {/* زر تغيير اللغة */}
             <button onClick={toggleLanguage} className="p-2 rounded">
               {translations[language].lang}
             </button>
 
-            {/* زر تبديل الثيم */}
             <button 
               onClick={toggleTheme} 
               className="p-2 rounded"
@@ -68,7 +66,6 @@ function Navbar() {
               {theme === "dark" ? translations[language].dark : translations[language].light}
             </button>
 
-            {/* زر القائمة الجانبية */}
             <button
               onClick={() => setIsOpen(true)}
               className="md:hidden text-xl focus:outline-none"
@@ -79,7 +76,6 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* القائمة الجانبية */}
       {isOpen && (
         <>
           <div 
