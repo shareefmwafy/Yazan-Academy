@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="p-4 w-[95%] m-auto mt-[10px] rounded-[10px]"
+        className="p-4 w-[95%] m-auto mt-[10px] rounded-[10px] font-[Cairo]"
         style={{
           backgroundColor: "var(--primary-color)",
           color: "var(--text-color)",
@@ -88,7 +88,7 @@ function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 left-0 w-64 h-full bg-gray-900 text-white p-6 z-50 shadow-lg"
+            className="fixed top-0 left-0 w-64 h-full bg-gray-900 text-white p-6 z-50 shadow-lg "
             style={{
               backgroundColor: "var(--primary-color)",
               color: "var(--text-color)",

@@ -15,7 +15,7 @@ body {
     --hero-text-light: #1f2937;
     --hero-bg-dark: #111827;
     --hero-text-dark: #ffffff;
-    --cat-bg-color: #ffffff;
+    --cat-bg-color: #e6e5e5;
     --cat-color: #000000;
 }
 
@@ -36,4 +36,5 @@ body {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    font-family: 'cairo';
 }
