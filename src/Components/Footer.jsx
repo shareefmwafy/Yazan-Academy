@@ -53,13 +53,12 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-center mt-8 opacity-70 text-sm md:text-base">
-        <p>
-          {language === 'en'
-            ? '© 2025 Academy. All Rights Reserved.'
-            : '© 2025 الأكاديمية. جميع الحقوق محفوظة.'}
+      <div className="text-center mt-8 opacity-70 text-sm md:text-base py-4 bg-gray-800 text-white rounded-lg shadow-lg max-w-sm mx-auto">
+        <p className="font-semibold">
+          © {new Date().getFullYear()} Shareef Mwafy. All Rights Reserved.
         </p>
       </div>
+
     </footer>
   );
 };
