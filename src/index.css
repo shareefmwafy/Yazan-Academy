@@ -9,7 +9,7 @@ body {
 :root {
     --bg-color: #ffffff;
     --text-color: #ffffff;
-    --primary-color: #1f2937;
+    --primary-color: #515761;
     --secondary-color: #374151;
     --hero-bg-light: #f3f4f6;
     --hero-text-light: #1f2937;
@@ -24,8 +24,9 @@ body {
     --secondary-color: #374151;
     --hero-bg-light: #f3f4f6;
     --hero-text-light: #1f2937;
-    --hero-bg-dark: #374151;
+    --hero-bg-dark: #111827;
     --hero-text-dark: #ffffff;
+    --Footer-dark: #656c77;
 }
 
 body {

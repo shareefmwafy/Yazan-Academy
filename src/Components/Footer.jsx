@@ -9,10 +9,10 @@ const Footer = () => {
 
   return (
     <footer
-      className="py-10 px-6 md:px-12 bg-gradient-to-r from-primary-color to-secondary-color text-white shadow-xl rounded-t-3xl"
+      className="py-10 px-6 md:px-12 bg-gradient-to-r bg-var from-primary-color to-secondary-color text-white shadow-xl rounded-t-3xl w-[95%] m-auto"
       style={{
-        backgroundColor: theme === 'dark' ? 'var(--primary-color)' : 'var(--bg-color)',
-        color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
+        backgroundColor: 'var(--primary-color)',
+        color: 'var(--text-color)'
       }}
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
@@ -29,7 +29,7 @@ const Footer = () => {
                 href="#"
                 className="transition-all duration-300 transform hover:text-yellow-300 hover:scale-110"
                 style={{
-                  color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
+                   color: 'var(--text-color)',
                 }}
               >
                 {language === 'en' ? item : item === 'Home' ? 'الرئيسية' : item === 'Courses' ? 'الدورات' : 'اتصل بنا'}
