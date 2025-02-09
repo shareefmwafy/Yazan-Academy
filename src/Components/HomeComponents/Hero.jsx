@@ -15,8 +15,8 @@ function Hero() {
 
   return (
     <section
-      className="relative w-[95%]  mx-auto mt-10 p-8 rounded-2xl overflow-hidden bg-opacity-80 backdrop-blur-lg shadow-lg"
-      style={{ backgroundColor: heroBgColor, color: heroTextColor }}
+      className="relative w-[95%] mx-auto mt-10 p-12 rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-600 transition-all duration-300 transform hover:shadow-3xl backdrop-blur-xl"
+      style={{ color: heroTextColor }}
     >
       {/* Background Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500 opacity-20 rounded-2xl"></div>
@@ -26,7 +26,7 @@ function Hero() {
         <img
           src={HeroImage}
           alt="Yazan Sasa"
-          className=" w-44 h-44 object-cover border-4 border-white shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+          className=" w-44 h-44 object-cover border-4 border-white shadow-lg transition-all duration-300 transform "
           style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <h1 className="text-3xl font-bold mt-6 drop-shadow-lg">
