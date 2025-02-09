@@ -25,7 +25,7 @@ function Navbar() {
       about: "من نحن",
       book: "اشترِ كتابنا",
       bookNow: "احجز الآن",
-      academy: "أكاديمية يزن",
+      academy: "Yazan Academy",
       dark: "🌙",
       light: "🔆",
       lang: "AR",

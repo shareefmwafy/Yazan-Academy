@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../cont/LanguageProvider';
-import { useTheme } from '../cont/ThemeProvider'; 
+import { useTheme } from '../cont/ThemeProvider';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   const { language } = useLanguage();
@@ -8,99 +9,59 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-red-500 text-white dark:bg-gray-900 dark:text-white py-8"
+      className="py-10 px-6 md:px-12 bg-gradient-to-r from-primary-color to-secondary-color text-white shadow-xl rounded-t-3xl"
       style={{
         backgroundColor: theme === 'dark' ? 'var(--primary-color)' : 'var(--bg-color)',
+        color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
       }}
     >
-      <div className="container mx-auto text-center">
-        <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
-          {/* Left Section - Copyright */}
-          <div>
-            <p
-              style={{
-                color: theme === 'dark' ? 'var(--secondary-color)' : 'var(--primary-color)',
-              }}
-              className="text-lg md:text-xl font-semibold"
-            >
-              {language === 'en' ? '© 2025 Your Company. All rights reserved.' : '© 2025 شركتك. جميع الحقوق محفوظة.'}
-            </p>
-          </div>
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        {/* Logo */}
+        <h1 className="text-3xl font-bold tracking-wide text-center md:text-left">
+          {'Yazan Academy'}
+        </h1>
 
-          {/* Right Section - Links */}
-          <div>
-            <ul className="flex flex-wrap justify-center gap-6 text-sm lg:text-base font-medium">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-500 transition-colors duration-300"
-                  style={{
-                    color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
-                  }}
-                >
-                  {language === 'en' ? 'Privacy Policy' : 'سياسة الخصوصية'}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-500 transition-colors duration-300"
-                  style={{
-                    color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
-                  }}
-                >
-                  {language === 'en' ? 'Terms of Service' : 'شروط الخدمة'}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-500 transition-colors duration-300"
-                  style={{
-                    color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
-                  }}
-                >
-                  {language === 'en' ? 'Contact Us' : 'اتصل بنا'}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        {/* Navigation Links */}
+        <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-10 text-lg font-medium text-center md:text-left">
+          {['Home', 'Courses', 'Contact'].map((item, index) => (
+            <li key={index}>
+              <a
+                href="#"
+                className="transition-all duration-300 transform hover:text-yellow-300 hover:scale-110"
+                style={{
+                  color: theme === 'dark' ? 'var(--text-color)' : 'var(--primary-color)',
+                }}
+              >
+                {language === 'en' ? item : item === 'Home' ? 'الرئيسية' : item === 'Courses' ? 'الدورات' : 'اتصل بنا'}
+              </a>
+            </li>
+          ))}
+        </ul>
 
         {/* Social Media Icons */}
-        <div className="flex justify-center gap-6 mt-6">
-          <a
-            href="https://www.facebook.com"
-            className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-facebook-f text-xl"></i>
-          </a>
-          <a
-            href="https://www.twitter.com"
-            className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-twitter text-xl"></i>
-          </a>
-          <a
-            href="https://www.instagram.com"
-            className="text-gray-400 hover:text-pink-500 transition-colors duration-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-instagram text-xl"></i>
-          </a>
+        <div className="flex space-x-4 text-xl">
+          {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, index) => (
+            <a
+              key={index}
+              href="#"
+              className="p-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition-all duration-300"
+            >
+              <Icon />
+            </a>
+          ))}
         </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="text-center mt-8 opacity-70 text-sm md:text-base">
+        <p>
+          {language === 'en'
+            ? '© 2025 Academy. All Rights Reserved.'
+            : '© 2025 الأكاديمية. جميع الحقوق محفوظة.'}
+        </p>
       </div>
     </footer>
   );
 };
 
 export default Footer;
-
-
-
-
