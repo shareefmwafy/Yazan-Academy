@@ -15,8 +15,10 @@ body {
     --hero-text-light: #1f2937;
     --hero-bg-dark: #111827;
     --hero-text-dark: #ffffff;
-    --cat-bg-color: #e6e5e5;
+    --cat-bg-color: #ffffff;
     --cat-color: #000000;
+    --cat-border: #111827;
+    --shadow-color: rgba(0, 0, 0, 0.1); 
 }
 
 .dark {
@@ -31,6 +33,8 @@ body {
     --Footer-dark: #656c77;
     --cat-bg-color: #111827;
     --cat-color:#ffffff;
+    --cat-border: #ffffff;
+    --shadow-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
