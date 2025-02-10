@@ -46,7 +46,6 @@ function Contact() {
           />
         </div>
 
-        {/* البريد الإلكتروني */}
         <div className="mb-4">
           <label className="block font-semibold text-base sm:text-lg mb-1">
             {isArabic ? "البريد الإلكتروني" : "Email"}
@@ -62,7 +61,6 @@ function Contact() {
           />
         </div>
 
-        {/* الرسالة */}
         <div className="mb-6">
           <label className="block font-semibold text-base sm:text-lg mb-1">
             {isArabic ? "الرسالة" : "Message"}
@@ -77,7 +75,6 @@ function Contact() {
           ></textarea>
         </div>
 
-        {/* زر الإرسال */}
         <button
           type="button"
           className="w-full py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 
