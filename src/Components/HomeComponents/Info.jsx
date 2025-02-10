@@ -59,8 +59,16 @@ function Info() {
   const { language } = useLanguage();
 
   return (
-<div className={`w-full max-w-[95%] m-auto flex flex-col items-center justify-center min-h-screen py-10 space-y-10 px-2 sm:px-4 ${theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
+<div className={`w-full max-w-[95%] m-auto flex flex-col items-center justify-center min-h-screen py-10 space-y-10 px-2 sm:px-4`}
+  style={{
+    backgroundColor:'var(--info-bg-color)',
+  }}
+>
+  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center"
+    style={{
+      color:'var(--info-color)'
+    }}
+  >
     {language === "ar" ? "كيف يعزز ذلك مسيرتك المهنية والبحثية" : "How It Boosts Your Career and Research"}
   </h1>
   {sections.map((section, index) => (
