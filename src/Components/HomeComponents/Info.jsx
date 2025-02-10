@@ -59,41 +59,41 @@ function Info() {
   const { language } = useLanguage();
 
   return (
-    <div className={`flex flex-col items-center justify-center py-10 space-y-10 ${theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black"}`} >
-      <h1 className="text-4xl font-bold mb-6 text-center">
-        {language === "ar" ? "كيف يعزز ذلك مسيرتك المهنية والبحثية" : "How It Boosts Your Career and Research"}
-      </h1>
-      {sections.map((section, index) => (
-        <div key={index} className="relative flex flex-col md:flex-row items-center w-full max-w-6xl gap-6 md:gap-12 px-4 md:px-8 ">
-          {index % 2 === 0 ? (
-            <>
-              <img
-                src={section.image}
-                alt={language === "ar" ? "صورة" : "Image"}
-                className="w-32 h-32 md:w-48 md:h-48 rounded-lg shadow-md object-cover"
-              />
-              <div className="p-4 shadow-md rounded-lg bg-opacity-80 backdrop-blur-lg w-full md:w-3/5 bg-blue-300">
-                <p className="text-gray-600">{section.description[language]}</p>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="p-4 shadow-md rounded-lg bg-opacity-80 backdrop-blur-lg w-full md:w-3/5 bg-gray-300">
-                <p className="text-gray-600">{section.description[language]}</p>
-              </div>
-              <img
-                src={section.image}
-                alt={language === "ar" ? "صورة" : "Image"}
-                className="w-32 h-32 md:w-48 md:h-48 rounded-lg shadow-md object-cover"
-              />
-            </>
-          )}
-          {index !== sections.length - 1 && (
-            <div className="absolute left-1/2 top-full h-10 w-1 bg-gray-300 transform -translate-x-1/2"></div>
-          )}
-        </div>
-      ))}
+<div className={`w-full max-w-[95%] m-auto flex flex-col items-center justify-center min-h-screen py-10 space-y-10 px-2 sm:px-4 ${theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
+  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
+    {language === "ar" ? "كيف يعزز ذلك مسيرتك المهنية والبحثية" : "How It Boosts Your Career and Research"}
+  </h1>
+  {sections.map((section, index) => (
+    <div key={index} className="relative flex justify-center flex-col md:flex-row items-center w-full max-w-6xl gap-4 sm:gap-6 md:gap-20 px-2 sm:px-4">
+      {index % 2 === 0 ? (
+        <>
+          <img
+            src={section.image}
+            alt={language === "ar" ? "صورة" : "Image"}
+            className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-lg shadow-md object-cover"
+          />
+          <div className="p-4 shadow-md rounded-lg bg-opacity-80 backdrop-blur-lg w-full sm:w-4/5 md:w-3/5 bg-blue-300">
+            <p className="text-gray-600">{section.description[language]}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="p-4 shadow-md rounded-lg bg-opacity-80 backdrop-blur-lg w-full sm:w-4/5 md:w-3/5 bg-gray-300">
+            <p className="text-gray-600">{section.description[language]}</p>
+          </div>
+          <img
+            src={section.image}
+            alt={language === "ar" ? "صورة" : "Image"}
+            className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-lg shadow-md object-cover"
+          />
+        </>
+      )}
+      {index !== sections.length - 1 && (
+        <div className="absolute left-1/2 top-full h-10 w-1 bg-gray-300 transform -translate-x-1/2"></div>
+      )}
     </div>
+  ))}
+</div>
 
   );
 }
