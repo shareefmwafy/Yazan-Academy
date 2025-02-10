@@ -18,7 +18,6 @@ function Hero() {
       className="relative w-[95%] mx-auto mt-10 p-12 rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-600 transition-all duration-300 transform hover:shadow-3xl backdrop-blur-xl"
       style={{ color: heroTextColor }}
     >
-      {/* Background Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500 opacity-20 rounded-2xl"></div>
 
       {/* Content */}
@@ -31,7 +30,7 @@ function Hero() {
         />
         <h1 className="text-3xl font-bold mt-6 drop-shadow-lg">
           <Typewriter
-            key={language}  // إضافة key هنا لضمان التحديث عند تغيير اللغة
+            key={language}  
             onInit={(typewriter) => {
               typewriter
                 .typeString(
@@ -42,9 +41,9 @@ function Hero() {
                 .start();
             }}
             options={{
-              autoStart: true,  // تأكد من أن الكتابة تبدأ تلقائيًا
-              loop: false,      // لا تكرار
-              delay: 50,        // سرعة الكتابة
+              autoStart: true,  
+              loop: false,      
+              delay: 50,        
             }}
           />
         </h1>

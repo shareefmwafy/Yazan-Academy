@@ -19,6 +19,8 @@ body {
     --cat-color: #000000;
     --cat-border: #111827;
     --shadow-color: rgba(0, 0, 0, 0.1); 
+    --info-bg-color: #ffffff;
+    --info-color: #111827;
 }
 
 .dark {
@@ -35,6 +37,8 @@ body {
     --cat-color:#ffffff;
     --cat-border: #ffffff;
     --shadow-color: rgba(255, 255, 255, 0.1);
+    --info-bg-color: #111827;
+    --info-color: #ffffff;
 }
 
 body {
