@@ -3,6 +3,7 @@ import { useTheme } from "../cont/ThemeProvider";
 import { useLanguage } from "../cont/LanguageProvider"; 
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react"; 
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -47,10 +48,10 @@ function Navbar() {
           </a>
 
           <ul className="hidden md:flex space-x-6">
-            <li><a href="#" className="hover:opacity-80">{translations[language].home}</a></li>
-            <li><a href="#" className="hover:opacity-80">{translations[language].about}</a></li>
-            <li><a href="#" className="hover:opacity-80">{translations[language].book}</a></li>
-            <li><a href="#" className="hover:opacity-80">{translations[language].bookNow}</a></li>
+            <li><Link to="/" className="hover:opacity-80">{translations[language].home}</Link></li>
+            <li><Link to="/about" className="hover:opacity-80">{translations[language].about}</Link></li>
+            <li><Link to="#" className="hover:opacity-80">{translations[language].book}</Link></li>
+            <li><Link to="#" className="hover:opacity-80">{translations[language].bookNow}</Link></li>
           </ul>
 
           <div className="flex items-center space-x-4">
